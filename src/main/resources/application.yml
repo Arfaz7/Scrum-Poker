@@ -4,9 +4,7 @@ server:
 spring:
   application:
     name: scrum-poker
-  profiles:
-    include:
-      - run
+
 
 logging:
   level:
