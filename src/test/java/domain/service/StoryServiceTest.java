@@ -20,7 +20,8 @@ public class StoryServiceTest {
     @Test
     void testUpdateStoryPoint() {
         Map<String, Story> stories = storyService.getAllStories();
-        storyService.updateStoryPoint("add login feature", 5);
+        Story story = new Story("add login feature", "", 5);
+        storyService.updateStoryPoint(story);
 
         Assertions.assertEquals(5, stories.get("add login feature").getStoryPoint());
     }

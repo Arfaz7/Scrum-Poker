@@ -17,7 +17,7 @@ public class StoryService {
 
     public Map<String, Story> getAllStories() { return stories; }
 
-    public void updateStoryPoint(String storyName, int storyPoint) {
-        stories.get(storyName).setStoryPoint(storyPoint);
+    public void updateStoryPoint(Story story) {
+        stories.put(story.getName(), story);
     }
 }
