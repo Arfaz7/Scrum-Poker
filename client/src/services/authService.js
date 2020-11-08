@@ -14,17 +14,8 @@ export function login(user) {
     username: user,
   }).then(res => {
     setToken(res.data);
-    return "user";
+    localStorage.setItem('user', user);
   });
-}
-
-export function hasRole(roles) {
-  const userRaw = localStorage.getItem('user');
-  if (userRaw) {
-    const user = JSON.parse(userRaw);
-    return roles.includes(user.role.name);
-  }
-  return false;
 }
 
 export function logout() {

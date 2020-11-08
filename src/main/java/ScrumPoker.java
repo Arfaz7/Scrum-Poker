@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {
         "config.*",
         "domain",
+        "infrastructure",
         "interfaces"
 })
 public class ScrumPoker {

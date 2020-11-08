@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
+import StoryList from '../components/StoryList';
 
-      </div>
-    )
-  }
+class Home extends Component {
+    render() {
+        return (
+          <div>
+            <h1>Backlog</h1>
+            <br/>
+            <StoryList />
+          </div>
+        )
+    }
 }
 
 export default Home;

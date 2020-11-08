@@ -10,9 +10,9 @@ import java.util.Map;
 public class StoryService {
 
     private final Map<String, Story> stories = new HashMap() {{
-        put("add login feature", new Story("add login feature", "", 0));
-        put("create chatbot feature", new Story("create chatbot feature", "", 0));
-        put("create FAQ feature", new Story("create FAQ feature", "", 0));
+        put("add login feature", new Story("add login feature", "User should be able to connect to the application using username and password", 0));
+        put("create chatbot feature", new Story("create chatbot feature", "No Description", 0));
+        put("create FAQ feature", new Story("create FAQ feature", "No Description", 0));
     }};
 
     public Map<String, Story> getAllStories() { return stories; }

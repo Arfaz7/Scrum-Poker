@@ -11,6 +11,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping(value= "/api/v1/story")
+@CrossOrigin("*")
 @Api(tags = "story", value= "Methods to manipulate story")
 public class StoryController {
 
