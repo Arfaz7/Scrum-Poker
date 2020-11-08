@@ -11,10 +11,10 @@ public class UserService {
 
     private List<String> users = new ArrayList<String>() {{
         add("arfaz.feroz@gmail.com");
-        add("sparker@seekerscapital.com");
-        add("jbcebe@seekerscapital.com");
-        add("ywsing@seekerscapital.com");
-        add("byeung@seekerscapital.com");
+        add("sparker@gmail.com");
+        add("jbcebe@gmail.com");
+        add("ywsing@gmail.com");
+        add("byeung@gmail.com");
     }};
 
     public String login(String username) throws Exception {
