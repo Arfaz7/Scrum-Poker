@@ -12,24 +12,11 @@ public class UserServiceTest {
         String token = "";
 
         try {
-            token = userService.login("arfaz.feroz@gmail.com");
+            token = userService.login("");
         } catch (Exception e) {
             e.getMessage();
         }
 
         Assertions.assertNotEquals("" ,token);
-    }
-
-    @Test
-    void testLoginWithUnknownUsername() {
-        String token = "";
-
-        try {
-            token = userService.login("john.smith@gmail.com");
-        } catch (Exception e) {
-            e.getMessage();
-        }
-
-        Assertions.assertEquals("" ,token);
     }
 }
